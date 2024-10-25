@@ -1,5 +1,5 @@
 # WELCOME!!:
-# Hey there, I'm @danplanned! 👋<br><br>Welcome to my GitHub profile! I’m excited to share my journey as I dive deeper into the world of software engineering and development. Here's a bit about me:
+# Hey there, I'm @danplanned! 👋
 <br><br>👨‍💻 About Me
 <br>- 🚀 **Aspiring Full-Stack Developer:** Currently sharpening my **JavaScript** skills with a focus on front-end development, but I’ve got my eyes set on becoming a well-rounded **full-stack engineer**.
 <br>- 💻 **Passionate About Technology:** I’m always curious about new technologies and love exploring different areas in **software engineering**, from **web development** to **open-source projects**.
