@@ -12,7 +12,7 @@
   <nav>
     <div class="logo">Dan Le</div>
     <ul class="nav-links">
-      <li><a href="#languages">Languages</a></li>
+      <li><a href="#sphere">Languages</a></li>
       <li><a href="#projects">Projects</a></li>
       <li> <a href="#contact">Contact</a></li>
     </ul>
@@ -28,18 +28,49 @@
     </div>
   </section>
 
-<img id="logo" src="assets/D-Stratos_Logo.webp" alt="D-Stratos_Logo">
+<section id = 'd-stratos' class="container">
+  <img id="logo" src="assets/D-Stratos_Logo.webp" alt="D-Stratos_Logo">
+  <h1><span class = "highlight">D-Stratos</span></h1>
+  <p>D-Stratos was unofficially founded in 2025. This was during the time when I was a business analyst working in Healthcare, but I wanted to do more. So I took a software development course and picked up web development. After consulting and discussing with my dad about what I can do with tese set of skills, he asked me if I wanted to give back to the community? I asked him how would I be able to and he said to go to small local businesses around orange county and offer to build them a website at a small price. That way I would gain more experience, gain a network or people who can vouch for me and even one day support me when I make this official. Thank you to mom and dad for always supporting me in all the things I do.</p>
+
+</section>
 
 
-  <section id="languages" class="container">
-    <h1>My <span class="highlight">Technology Stack</span></h1>
-    <div class="tech-stack">
-      <div><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML"><span>HTML</span></div>
-      <div><img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS"><span>CSS</span></div>
-      <div><img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript"><span>JavaScript</span></div>
-      <div><img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React"><span>React</span></div>
-    </div>
-  </section>
+
+
+
+
+<section id = "sphere" class="container">
+  <span class = "Sphere"></span>
+  <script src = "https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+  <script>
+    const Texts = [
+      'HTML', "CSS", 'JAVASCRIPT',
+      "REACT", "GO", "PYTHON", 
+      "SQL", "EXCEL", "POWER BI",
+      "TABLEAU", "SSRS", "SSIS",
+      "JAVA", "MATLAB", "R",
+      "SOLIDWORKS"
+    ];
+
+    var TagCloud = TagCloud('.Sphere', Texts,{
+      radius: 300,
+      //animation speed can be slow, normal, or fast
+      maxSpeed: 'fast',
+      initSpeed: 'fast',
+      direction: '135',
+      keep: true
+    });
+    var color = 'lightblue ';
+    document .querySelector('.Sphere').style.color = color;
+  </script>
+
+
+</section>
+
+
+
+
 
 <section id="experience" class ="container">
 

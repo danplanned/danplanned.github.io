@@ -11,7 +11,8 @@
 
 body {
   text-align: center;
-  color: #242424;
+  color: whitesmoke;
+  background-color: #242424;
 }
 
 h1, h2 {
@@ -19,7 +20,7 @@ h1, h2 {
 }
 
 .highlight {
-  color: blue;
+  color: lightblue;
 }
 
 .container {
@@ -33,7 +34,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #f8f8f8;
+  background: #242424;
 }
 
 .nav-links {
@@ -44,7 +45,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #242424;
+  color: whitesmoke;
   font-weight: 700;
 }
 
@@ -73,11 +74,12 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Sphere */
 
-/* Tech Stack */
-.tech-stack img {
-  width: 80px;
-  margin: 10px;
+.Sphere {
+  display: grid;
+  place-items: center;
+
 }
 
 /* Projects */
@@ -105,7 +107,7 @@ nav {
 
 .btn {
   display: inline-block;
-  background: blue;
+  background: lightblue;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
