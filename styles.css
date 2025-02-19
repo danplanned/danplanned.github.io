@@ -82,38 +82,46 @@ nav {
 
 }
 
-/* Projects */
-.projects {
-  display: flex;
-  justify-content: center;
-}
-
-.project {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  border: 1px solid #ccc;
+/* Experience */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
   padding: 20px;
-  border-radius: 10px;
 }
 
-.project img {
-  width: 100px;
+.timeline-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #1a1a1a;
+  border-left: 4px solid lightblue;
+  border-radius: 5px;
 }
 
-.project-info {
+.timeline-date {
+  font-size: 18px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.timeline-content h3 {
+  margin: 5px 0;
+  font-size: 22px;
+  color: white;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.listing{
   text-align: left;
 }
 
-.btn {
-  display: inline-block;
-  background: lightblue;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 5px;
-}
+
+
 
 /* Footer */
 footer {
