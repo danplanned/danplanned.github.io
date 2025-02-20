@@ -121,7 +121,87 @@ nav {
 }
 
 
+/* Contact */
+#contact {
+  text-align: center;
+  background: #1a1a1a;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
+#contact h1 {
+  color: lightblue;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #242424;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: whitesmoke;
+  font-size: 16px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  background: #333;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: lightblue;
+  color: #242424;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: #1e90ff;
+}
+
+.contact-info {
+  margin-top: 25px;
+  color: whitesmoke;
+}
+
+.contact-info a {
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
 
 /* Footer */
 footer {

@@ -1,134 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dan Le</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Le</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <nav>
-    <div class="logo">Dan Le</div>
-    <ul class="nav-links">
-      <li><a href="#sphere">Languages</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li> <a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <body>
+    <nav>
+      <div class="logo">Dan Le</div>
+      <ul class="nav-links">
+        <li><a href="#sphere">Languages</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <section id="about-me" class="container">
-    <div class="profile">
-      <img src="assets/Image.jpg" alt="Dan Le">
-      <h1>Hello! I'm <span class="highlight">Dan Le</span> 👋</h1>
+    <section id="about-me" class="container">
+      <div class="profile">
+        <img src="assets/Image.jpg" alt="Dan Le" />
+        <h1>Hello! I'm <span class="highlight">Dan Le</span> 👋</h1>
+        <p>
+          I'm a
+          <strong class="highlight"
+            >business analyst and software engineer</strong
+          >. I enjoy developing new technologies, changing data into new
+          information, and creating websites! I am also the founder of
+          D-Stratos, where I offer to develop websites for small local
+          companies.
+        </p>
+        <br />
+        <h3>
+          <strong class="highlight"
+            >Bachelors of Science Biomedical Engineering</strong
+          >
+        </h3>
+        <p>Software Development</p>
+        <p>Data Analysis</p>
+        <p>Business Development</p>
+      </div>
+    </section>
+
+    <section id="d-stratos" class="container">
+      <img id="logo" src="assets/D-Stratos_Logo.webp" alt="D-Stratos_Logo" />
+      <h1><span class="highlight">D-Stratos</span></h1>
       <p>
-        I'm a <strong class="highlight">business analyst and software engineer</strong>. I enjoy developing new technologies, changing data into new information, and creating websites! I am also the founder of D-Stratos, where I offer to develop websites for small local companies. 
+        D-Stratos was unofficially founded in 2025. This was during the time
+        when I was a business analyst working in Healthcare, but I wanted to do
+        more. So I took a software development course and picked up web
+        development. After consulting and discussing with my dad about what I
+        can do with tese set of skills, he asked me if I wanted to give back to
+        the community? I asked him how would I be able to and he said to go to
+        small local businesses around orange county and offer to build them a
+        website at a small price. That way I would gain more experience, gain a
+        network or people who can vouch for me and even one day support me when
+        I make this official. Thank you to mom and dad for always supporting me
+        in all the things I do.
       </p>
-      <br>
-      <h3><strong class="highlight">Bachelors of Science Biomedical Engineering</strong></h3>
-      <p>Software Development</p>
-      <p>Data Analysis</p>
-      <p>Business Development</p>
-    </div>
-  </section>
+    </section>
 
-<section id = 'd-stratos' class="container">
-  <img id="logo" src="assets/D-Stratos_Logo.webp" alt="D-Stratos_Logo">
-  <h1><span class = "highlight">D-Stratos</span></h1>
-  <p>D-Stratos was unofficially founded in 2025. This was during the time when I was a business analyst working in Healthcare, but I wanted to do more. So I took a software development course and picked up web development. After consulting and discussing with my dad about what I can do with tese set of skills, he asked me if I wanted to give back to the community? I asked him how would I be able to and he said to go to small local businesses around orange county and offer to build them a website at a small price. That way I would gain more experience, gain a network or people who can vouch for me and even one day support me when I make this official. Thank you to mom and dad for always supporting me in all the things I do.</p>
+    <section id="sphere" class="container">
+      <h1><span class="highlight"> Tech Stack</span></h1>
+      <span class="Sphere"></span>
+      <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+      <script>
+        const Texts = [
+          "HTML",
+          "CSS",
+          "JAVASCRIPT",
+          "REACT",
+          "GO",
+          "PYTHON",
+          "SQL",
+          "EXCEL",
+          "POWER BI",
+          "TABLEAU",
+          "SSRS",
+          "SSIS",
+          "JAVA",
+          "MATLAB",
+          "R",
+          "SOLIDWORKS",
+          "C#",
+          "TYPESCRIPT",
+          "WORDPRESS",
+        ];
 
-</section>
+        var TagCloud = TagCloud(".Sphere", Texts, {
+          radius: 250,
+          //animation speed can be slow, normal, or fast
+          maxSpeed: "fast",
+          initSpeed: "fast",
+          direction: "135",
+          keep: true,
+        });
+        var color = "lightblue ";
+        document.querySelector(".Sphere").style.color = color;
+      </script>
+    </section>
 
+    <section id="experience" class="container">
+      <h1>My <span class="highlight">Experiences</span></h1>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">June 2024 - Present</div>
+          <div class="timeline-content">
+            <h3>Programmer Analyst - Business Intelligence</h3>
+            <ul class="listing">
+              <li>
+                Strategically plan business operations, while developing and
+                improving legacy processes
+              </li>
+              <li>
+                Collaborate with cross-functional teams to automate key business
+                processes, improving operational efficiency and reducing time
+                delays.
+              </li>
+              <li>
+                Prepare and organize data for internal and external data
+                transfers, ensuring accuracy and maintaining data integrity
+              </li>
+              <li>Prepare and send 837 files to Health Plans</li>
+              <li>
+                Collect, prepare and send HEDIS Care Gaps and identify
+                discrepancies
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="timeline-item">
+          <div class="timeline-date">June 2023 - January 2024</div>
+          <div class="timeline-content">
+            <h3>Data Analyst</h3>
+            <ul class="listing">
+              <li>
+                Query data from Microsoft SQL Server databases for daily,
+                weekly, and monthly reporting to Health Plans(BlueShield of CA,
+                LA Care, Inland Empire, and Central California Alliance) on key
+                performance indicators of transportation for Medicaid, Medicare,
+                and Commercial members
+              </li>
+              <li>Implement new and change existing web reports SSRS</li>
+              <li>
+                Work with developers to review and enhance new data models, then
+                use PowerBI for analytical reporting.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<section id = "sphere" class="container">
-  <h1><span class = "highlight"> Tech Stack</span></h1>
-  <span class = "Sphere"></span>
-  <script src = "https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-  <script>
-    const Texts = [
-      'HTML', "CSS", 'JAVASCRIPT',
-      "REACT", "GO", "PYTHON", 
-      "SQL", "EXCEL", "POWER BI",
-      "TABLEAU", "SSRS", "SSIS",
-      "JAVA", "MATLAB", "R",
-      "SOLIDWORKS", "C#"
-    ];
-
-    var TagCloud = TagCloud('.Sphere', Texts,{
-      radius: 250,
-      //animation speed can be slow, normal, or fast
-      maxSpeed: 'fast',
-      initSpeed: 'fast',
-      direction: '135',
-      keep: true
-    });
-    var color = 'lightblue ';
-    document .querySelector('.Sphere').style.color = color;
-  </script>
-
-</section>
-
-
-
-
-
-<section id="experience" class="container">
-  <h1>My <span class="highlight">Experiences</span></h1>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-date">June 2024 - Present</div>
-      <div class="timeline-content">
-        <h3>Programmer Analyst - Business Intelligence</h3>
-        <ul class = "listing">
-          <li>Strategically plan business operations, while developing and improving legacy processes</li>
-          <li> Collaborate with cross-functional teams to automate key business processes, improving operational efficiency and reducing 
-            time delays. </li>
-            <li> Prepare and organize data for internal and external data transfers, ensuring accuracy and maintaining data integrity</li>
-            <li>Prepare and send 837 files to Health Plans</li>
-          <li>Collect, prepare and send HEDIS Care Gaps and identify discrepancies</li>
-        </ul>
+        <div class="timeline-item">
+          <div class="timeline-date">June 2016 - Present</div>
+          <div class="timeline-content">
+            <h3>Taekwondo Instructor</h3>
+            <ul class="listing">
+              <li>Lead demonstration team in performances and practices</li>
+              <li>Teach children self-defense, responsibility, and respect</li>
+              <li>
+                Organze, assist, and teach children with mental disabilities
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">June 2023 - January 2024</div>
-      <div class="timeline-content">
-        <h3>Data Analyst</h3>
-        <ul class = "listing">
-          <li>Query data from Microsoft SQL Server databases for daily, weekly, and monthly reporting to Health Plans(BlueShield of CA, LA Care, Inland Empire, and Central California Alliance) on key performance indicators of transportation for Medicaid, Medicare, and Commercial members</li>
-          <li>Implement new and change existing web reports SSRS</li>
-          <li>Work with developers to review and enhance new data models, then use PowerBI for analytical reporting.</li>
-        </ul>
-      </div>
-    </div>
+    </section>
 
-    <div class="timeline-item">
-      <div class="timeline-date">June 2016 - Present </div>
-      <div class="timeline-content">
-        <h3>Taekwondo Instructor</h3>
-        <ul class = "listing">
-          <li>Lead demonstration team in performances and practices</li>
-          <li>Teach children self-defense, responsibility, and respect</li>
-          <li>Organze, assist, and teach children with mental disabilities</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="Contact" class="container">
 
+      <section id="contact" class="container">
+        <h1>Contact <span class="highlight">Me</span></h1>
+        <p>If you have any questions or would like to collaborate, feel free to reach out!</p>
+        
+        <div class="contact-form">
+          <form action="https://formspree.io/f/{your-form-id}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+      
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      
+        <div class="contact-info">
+          <p>Email: <a href="mailto:elihcnad@gmail.com">elihcnad@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/dan-le-15393b1b2" target="_blank">www.linkedin.com/in/dan-le-15393b1b2</a></p>
+        </div>
 
+    </section>
 
-
-<section id="Contact" class="container">
-
-  <h1>My <strong class="highlight">Contacts</strong></h1>
-
-</section>
-
-  <footer>
-    <p>Copyright &copy; 2025 Dan Le</p>
-  </footer>
-</body>
+    <footer>
+      <p>Copyright &copy; 2025 Dan Le</p>
+    </footer>
+  </body>
 </html>
