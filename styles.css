@@ -33,6 +33,7 @@ h1, h2 {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background: #242424;
 }
@@ -47,13 +48,11 @@ nav {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 700;
+  transition: color 0.3s ease-in-out;
 }
 
-.primary {
-  background: blue;
-  padding: 8px 20px;
-  border-radius: 20px;
-  color: white;
+.nav-links a:hover {
+  color: lightblue;
 }
 
 /* About Section */
@@ -66,16 +65,47 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#logo{
-  width: 500px; 
-  height: 250px; 
-  object-fit: cover; 
-  border: 3px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Animated Text */
+.animated-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: lightblue;
+  display: inline-block;
 }
 
-/* Sphere */
+/* Cursor Blinking */
+.cursor {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  color: lightblue;
+  animation: blink 1s infinite;
+}
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+.skills-list{
+  list-style: none;
+}
+
+
+/* Tech Stack Sphere */
 .Sphere {
   display: grid;
   place-items: center;
@@ -116,10 +146,9 @@ nav {
   color: #ddd;
 }
 
-.listing{
+.listing {
   text-align: left;
 }
-
 
 /* Contact */
 #contact {

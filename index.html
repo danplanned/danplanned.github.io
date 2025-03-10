@@ -18,31 +18,67 @@
       </ul>
     </nav>
 
-    <section id="about-me" class="container">
-      <div class="profile">
-        <img src="assets/Image.jpg" alt="Dan Le" />
-        <h1>Hello! I'm <span class="highlight">Dan Le</span> 👋</h1>
-        <p>
-          I'm a
-          <strong class="highlight"
-            >business analyst, software engineer, and work in progress accountant</strong
-          >. I enjoy developing new technologies, changing data into new information, and creating websites. While developing new technologies, I also enjoy learning new skills, hence I am also learning how to be an accountant!
-          
-          <!--I am also the founder of
-          D-Stratos, where I offer to develop websites for small local
-          companies.-->
-        </p>
-        <br />
-        <h3>
-          <strong class="highlight"
-            >Bachelors of Science Biomedical Engineering</strong
-          >
-        </h3>
-        <p>Software Development</p>
-        <p>Data Analysis</p>
-        <p>Business Development</p>
+    <section id="about-me" class="container about-me">
+      <div class="about-content">
+        <div class="profile">
+          <img src="assets/Image.jpg" alt="Dan Le" class="profile-img" />
+        </div>
+        
+        <div class="about-text"> 
+          <h1>I'm Dan Le, a <span class="animated-text"></span><span class="cursor">|</span></h1>
+          <p>
+            I enjoy developing new technologies, transforming data into valuable insights, and creating impactful websites. 
+            While developing my technical skills, I am also learning accounting!
+          </p>
+
+          <br><br>
+          <h1>
+            <strong class="highlight">Bachelor of Science in Biomedical Engineering</strong>
+          </h1>
+          <ul class="skills-list">
+            <li>Software Development</li>
+            <li>Data Analysis</li>
+            <li>Business Development</li>
+          </ul>
+        </div>
       </div>
     </section>
+
+    <script>
+      const words = ["Software Engineer", "Data Analyst", "Business Analyst", "Web Developer"];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const animatedText = document.querySelector(".animated-text");
+      const cursor = document.querySelector(".cursor");
+
+      function typeEffect() {
+        const currentWord = words[wordIndex];
+        if (isDeleting) {
+          animatedText.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          animatedText.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        let typingSpeed = isDeleting ? 50 : 100;
+
+        if (!isDeleting && charIndex === currentWord.length) {
+          typingSpeed = 2000; // Pause before deleting
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          typingSpeed = 500; // Pause before typing next word
+        }
+
+        setTimeout(typeEffect, typingSpeed);
+      }
+
+      typeEffect(); // Start animation
+    </script>
+
 <!--
     <section id="d-stratos" class="container">
       <img id="logo" src="assets/D-Stratos_Logo.webp" alt="D-Stratos_Logo" />
@@ -62,6 +98,7 @@
       </p>
     </section>
 -->
+
     <section id="sphere" class="container">
       <h1><span class="highlight"> Tech Stack</span></h1>
       <span class="Sphere"></span>
